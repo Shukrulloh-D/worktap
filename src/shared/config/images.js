@@ -1,44 +1,37 @@
 // ============================================================
-// ВСЕ КАРТИНКИ ПРОЕКТА — меняешь пути здесь и всё обновляется
+// ВСЕ КАРТИНКИ ПРОЕКТА — МЕНЯЙ ТОЛЬКО ЗДЕСЬ
 // ============================================================
-//
-// КАК ЗАМЕНИТЬ:
-// 1. Положи свою картинку в public/images/имя.png
-// 2. Открой этот файл
-// 3. Замени значение на '/images/имя.png'
-//
+// Как заменить:
+//  1. Положи файл в public/images/имя.png
+//  2. Замени строку на '/images/имя.png'
 // Пример:
-//   heroImage: 'https://i.pravatar.cc/300?img=12'
-//   → heroImage: '/images/hero.png'
+//   heroAvatar: 'https://i.pravatar.cc/300?img=12'
+//   → heroAvatar: '/images/hero-man.png'
 // ============================================================
 
 export const IMAGES = {
-  // === ЛОГОТИП ===
-  logo: '/logo.svg',                     // public/logo.svg
+  // === ЛОГОТИП (public/logo.svg) ===
+  logo: '/logo.svg',
 
-  // === ГЛАВНАЯ — HERO ===
-  heroAvatar: 'https://i.pravatar.cc/300?img=12',   // человек на главной
+  // === ГЛАВНАЯ ===
+  heroAvatar: '/hero.png',
+  helpsBusiness: '/helpBusiness.png',
 
-  // === ГЛАВНАЯ — БЛОК "КАК WORKTAP ПОМОГАЕТ БИЗНЕСУ" ===
-  helpsBusiness: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600',
+  // === AUTH (Login/Signup/Reset/NewPassword) ===
+  authBg: 'login.png',
 
-  // === ПРОФИЛЬ (юзер) ===
-  userAvatar: 'https://i.pravatar.cc/100?img=12',
+  // === ПРОФИЛЬ / ЧАТ / ОТЗЫВЫ ===
+  userAvatar: '/userAvatar.png',
+  curator: 'https://i.pravatar.cc/80?img=20',
+  reviewAvatar: '/reviewAvatar.png',
 
-  // === КАРТИНКИ ТОВАРОВ (ворки, заказы) ===
-  // Используются через `work.img` в mocks.js
-  workPlaceholder: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400',
-
-  // === АВАТАРЫ ФРИЛАНСЕРОВ (для карточек) ===
-  // Используются в mocks.js FREELANCERS
-  freelancerAvatar: (n) => `https://i.pravatar.cc/80?img=${n}`,
-
-  // === AVATAR для отзывов и чата ===
-  reviewAvatar: 'https://i.pravatar.cc/60?img=12',
-  chatAvatar: 'https://i.pravatar.cc/60?img=12',
+  // === КАРТИНКИ ТОВАРОВ / ВОРКОВ / ЗАКАЗОВ ===
+  workImage1: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400',
+  workImage2: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400',
+  workImage3: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400',
 };
 
-// Короткие помощники для картинок в моках
+// Утилиты для моков
 export const img = (seed, w = 400) =>
   `https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=${w}&sig=${seed}`;
 

@@ -1,0 +1,9 @@
+.card {
+  background: #fff; border-radius: var(--r); padding: 20px;
+  border: 1px solid #F0F0F0;
+}
+.head { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--c-border); }
+.author { font-weight: 700; font-size: 14px; }
+.stars { display: flex; gap: 2px; margin-bottom: 12px; }
+.text { font-size: 13px; color: var(--c-gray); line-height: 1.6; }

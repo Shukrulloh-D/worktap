@@ -1,3 +1,5 @@
+# ========= ROUTER =========
+cat > src/app/router/router.jsx << 'END'
 import { createBrowserRouter } from 'react-router-dom';
 import { MainLayout } from 'app/layouts/main-layout';
 import { AuthLayout } from 'app/layouts/auth-layout';
@@ -65,3 +67,17 @@ export const router = createBrowserRouter([
     ],
   },
 ]);
+END
+echo "export * from './router';" > src/app/router/index.js
+
+cat > src/app/layouts/index.js << 'END'
+export * from './main-layout';
+export * from './auth-layout';
+END
+
+echo ""
+echo "ALL DONE"
+echo ""
+echo "=== ПРОВЕРКА ПУСТЫХ ПАПОК ==="
+find src -type d -empty
+echo ""

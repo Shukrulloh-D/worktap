@@ -1,0 +1,11 @@
+@import '../order-freelancer/order-freelancer.module.css';
+.bid { background: #fff; border: 1px solid var(--c-border); border-radius: var(--r); padding: 20px; margin-bottom: 16px; }
+.bidHead { display: flex; justify-content: space-between; margin-bottom: 12px; }
+.bidPrice { font-size: 18px; font-weight: 800; color: var(--c-primary); }
+.bidDays { font-size: 13px; color: var(--c-gray); text-align: right; }
+.bidAuthor { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+.bidAuthor img { width: 48px; height: 48px; border-radius: 50%; }
+.bidActions { display: flex; gap: 12px; margin-top: 12px; }
+.bidBtn { padding: 10px 24px; border-radius: var(--r-pill); font-weight: 600; font-size: 13px; cursor: pointer; border: none; }
+.bidAccept { background: var(--c-primary-l); color: var(--c-primary); border: 1px solid var(--c-primary); }
+.bidDecline { background: var(--c-bg); color: var(--c-gray); }

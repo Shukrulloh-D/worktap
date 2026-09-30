@@ -1,0 +1,14 @@
+.title { font-size: 28px; font-weight: 800; margin-bottom: 24px; text-align: center; }
+.text { font-size: 14px; line-height: 1.7; color: #4B4B4B; }
+.grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.stepNum {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--c-primary-l); color: var(--c-primary);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; margin-bottom: 12px;
+}
+.stepTitle { font-weight: 700; font-size: 14px; margin-bottom: 8px; }
+.stepDesc { font-size: 12px; color: var(--c-gray); line-height: 1.5; }
+.btnRow { text-align: center; margin-top: 32px; }
+.btnOk { padding: 12px 60px; border-radius: var(--r-pill); }
+@media (max-width: 700px) { .grid4 { grid-template-columns: 1fr 1fr; } }

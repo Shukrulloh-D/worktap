@@ -1,0 +1,36 @@
+.wrap { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; background: #fff; }
+.left { padding: 60px 80px; display: flex; flex-direction: column; justify-content: center; max-width: 600px; }
+.logo { display: flex; align-items: center; gap: 8px; margin-bottom: 60px; }
+.logo img { height: 36px; }
+.logoText { font-size: 20px; font-weight: 800; }
+.right {
+  background: linear-gradient(135deg, #FFF5EB 0%, #FFE4CC 100%);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px;
+}
+.bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+.tip {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: var(--r);
+  font-size: 13px;
+  color: var(--c-gray);
+  line-height: 1.5;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 60px;
+}
+.dots { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 2; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: #fff; opacity: 0.5; }
+.dotActive { background: var(--c-peach); opacity: 1; }
+@media (max-width: 900px) { .wrap { grid-template-columns: 1fr; } .right { display: none; } .left { padding: 40px 24px; } }

@@ -1,0 +1,9 @@
+.title { font-size: 24px; font-weight: 800; margin-bottom: 8px; text-align: center; }
+.subtitle { font-size: 13px; color: var(--c-gray); text-align: center; margin-bottom: 24px; }
+.form { display: flex; flex-direction: column; gap: 16px; }
+.submit { padding: 14px; font-size: 14px; }
+.bottom { text-align: center; margin-top: 16px; font-size: 13px; color: var(--c-gray); }
+.switch {
+  color: var(--c-primary); font-weight: 700;
+  background: none; border: none; cursor: pointer;
+}

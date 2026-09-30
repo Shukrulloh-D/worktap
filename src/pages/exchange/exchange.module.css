@@ -1,0 +1,47 @@
+.top { background: linear-gradient(135deg, #FFF5EB 0%, #FFF 60%); padding: 60px 0; text-align: center; }
+.title { font-size: 32px; font-weight: 800; margin: 0 auto 24px; max-width: 700px; line-height: 1.2; }
+.hl { color: var(--c-primary); }
+.searchRow { display: flex; gap: 8px; max-width: 600px; margin: 0 auto 24px; }
+.searchRow input { flex: 1; border-radius: var(--r-pill); }
+.searchRow .btn { padding: 12px 32px; border-radius: var(--r-pill); }
+.tags { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.tag {
+  padding: 6px 14px; border: 1px solid var(--c-border);
+  border-radius: var(--r-pill); background: #fff;
+  font-size: 12px; cursor: pointer; transition: all var(--t);
+}
+.tag:hover { border-color: var(--c-primary); color: var(--c-primary); }
+
+.list { padding: 40px 0; }
+.listTitle { font-size: 20px; font-weight: 700; margin-bottom: 20px; text-align: center; }
+.filters { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px; }
+.count { font-size: 14px; color: var(--c-gray); }
+.filtersRight { display: flex; gap: 12px; }
+.filtersRight input { width: 150px; padding: 8px 12px; }
+.filtersRight select { width: 180px; padding: 8px 12px; }
+
+.job {
+  background: #fff; border-radius: var(--r); padding: 24px; margin-bottom: 16px;
+  display: grid; grid-template-columns: 1fr auto; gap: 24px;
+  box-shadow: var(--sh-sm); transition: transform var(--t), box-shadow var(--t);
+}
+.job:hover { transform: translateY(-2px); box-shadow: var(--sh); }
+.jobTitle { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+.author { display: flex; gap: 12px; align-items: center; margin-bottom: 8px; }
+.author img { width: 40px; height: 40px; border-radius: 50%; }
+.authorName { font-size: 13px; font-weight: 600; }
+.authorMeta { font-size: 12px; color: var(--c-gray); }
+.stars { display: flex; gap: 2px; align-items: center; }
+.reviewsCount { font-size: 12px; color: var(--c-gray); margin-left: 8px; }
+.jobRight { text-align: right; display: flex; flex-direction: column; justify-content: space-between; }
+.budget { color: var(--c-primary); font-weight: 700; font-size: 16px; }
+.time { font-size: 12px; color: var(--c-gray); margin-top: 4px; }
+.offers { font-size: 13px; color: var(--c-gray); margin-top: 12px; }
+.more { text-align: center; margin-top: 32px; }
+.more button { padding: 12px 40px; }
+
+@media (max-width: 700px) {
+  .job { grid-template-columns: 1fr; }
+  .jobRight { text-align: left; }
+  .filtersRight { flex-wrap: wrap; }
+}

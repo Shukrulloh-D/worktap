@@ -1,0 +1,18 @@
+.wrap { max-width: 420px; }
+.greet { font-size: 13px; color: var(--c-gray); margin-bottom: 6px; }
+.title { font-size: 28px; font-weight: 800; margin-bottom: 32px; }
+.form { display: flex; flex-direction: column; gap: 20px; }
+.label { font-size: 13px; font-weight: 600; display: block; margin-bottom: 6px; }
+.row { display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+.check { display: flex; gap: 8px; align-items: center; }
+.forgot { color: var(--c-peach); }
+.submit { padding: 14px; font-size: 14px; border-radius: var(--r-pill); margin-top: 8px; }
+.google {
+  padding: 14px; font-size: 14px; border-radius: var(--r-pill);
+  background: var(--c-dark); color: #fff;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  font-weight: 600; cursor: pointer; border: none;
+}
+.google:hover { background: #000; }
+.bottom { font-size: 13px; color: var(--c-gray); text-align: center; margin-top: 16px; }
+.link { color: var(--c-peach); font-weight: 600; }

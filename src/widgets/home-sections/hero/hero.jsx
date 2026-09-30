@@ -9,14 +9,17 @@ export const Hero = () => {
   return (
     <section className={styles.section}>
       <div className={styles.inner}>
-        <div>
+        <div className={styles.left}>
           <h1 className={styles.title}>
-            Ищите и находите подходящую работу среди <span className={styles.hl}>10,000+</span> проектов и покажите на что Вы способны!
+            Покупайте фриланс-услуги<br />
+            в <span className={styles.hl}>два клика</span>
           </h1>
+          <p className={styles.subtitle}>Ворк — единица работы продавца, которую можно купить как товар в магазине</p>
           <div className={styles.searchRow}>
-            <input className="input" placeholder="Какую работу ищете?" />
+            <input className="input" placeholder="Что нужно сделать?" />
             <button className="btn btn-peach">Найти</button>
           </div>
+          <div className={styles.tagsTitle}>Выберите рубрику, чтобы начать</div>
           <div className={styles.tags}>
             {TAGS.map(c => (
               <button key={c} className={styles.tag} onClick={() => nav(`/exchange?cat=${c}`)}>{c}</button>
@@ -24,6 +27,8 @@ export const Hero = () => {
             <button className={styles.tagAll} onClick={() => nav('/exchange')}>Все категории</button>
           </div>
         </div>
+
+        {/* ЗАМЕНИ ФОТО В IMAGES.heroAvatar (src/shared/config/images.js) */}
         <div className={styles.right}>
           <div className={styles.circle}>
             <img src={IMAGES.heroAvatar} alt="Hero" />
