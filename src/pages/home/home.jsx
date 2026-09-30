@@ -4,6 +4,7 @@ import { ActiveWorks } from 'widgets/home-sections/active-works/active-works';
 import { TopFreelancers } from 'widgets/home-sections/top-freelancers/top-freelancers';
 import { HowToSolve } from 'widgets/home-sections/how-to-solve/how-to-solve';
 import { HelpsBusiness } from 'widgets/home-sections/helps-business/helps-business';
+
 export const HomePage = () => (
   <div className="pageFadeIn">
     <Hero />

@@ -1,0 +1,11 @@
+.section { padding: 40px 0; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.more {
+  background: #F5F0FF; border-radius: var(--r);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; min-height: 260px;
+  font-weight: 700; font-size: 16px; color: var(--c-purple);
+  transition: transform var(--t), box-shadow var(--t);
+}
+.more:hover { transform: translateY(-4px); box-shadow: var(--sh); }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }

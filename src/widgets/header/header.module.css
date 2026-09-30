@@ -1,0 +1,60 @@
+.header { background: #fff; border-bottom: 1px solid #F0F0F0; position: sticky; top: 0; z-index: 100; }
+.inner {
+  max-width: 1230px; margin: 0 auto; padding: 0 20px;
+  display: flex; justify-content: space-between; align-items: center; height: 80px;
+}
+.logo { display: flex; align-items: center; gap: 8px; }
+.logo img { height: 36px; }
+.logoText { font-size: 20px; font-weight: 800; }
+
+.nav { display: flex; gap: 28px; font-size: 14px; font-weight: 500; }
+.nav a { color: var(--c-dark); transition: color 0.2s; }
+.nav a:hover, .nav a.active { color: var(--c-primary); }
+
+.actions { display: flex; gap: 12px; align-items: center; }
+.iconBtn {
+  color: var(--c-gray-l); background: none; border: none;
+  cursor: pointer; padding: 6px; display: flex; align-items: center;
+}
+.iconBtn:hover { color: var(--c-primary); }
+
+.userBtn {
+  display: flex; gap: 8px; align-items: center;
+  cursor: pointer; padding: 4px 8px;
+  border-radius: var(--r-sm); transition: background var(--t);
+}
+.userBtn:hover { background: var(--c-bg); }
+.userName { font-size: 14px; font-weight: 600; }
+.userAvatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+
+.menu {
+  position: absolute; top: 56px; right: 0;
+  background: #fff; box-shadow: var(--sh);
+  border-radius: var(--r); padding: 8px;
+  min-width: 220px; z-index: 200;
+}
+.menuLabel { padding: 8px 12px; font-size: 12px; color: var(--c-gray); }
+.menuLink {
+  display: block; padding: 10px 12px;
+  font-size: 14px; border-radius: var(--r-sm);
+}
+.menuLink:hover { background: var(--c-bg); }
+.menuDivider { border-top: 1px solid #F0F0F0; margin: 6px 0; }
+.logout {
+  display: block; padding: 10px 12px;
+  font-size: 14px; color: var(--c-danger);
+  width: 100%; text-align: left;
+  background: none; border: none; cursor: pointer;
+  border-radius: var(--r-sm);
+}
+.logout:hover { background: #FEF2F2; }
+
+.authBtn {
+  font-size: 14px; font-weight: 600;
+  background: none; border: none;
+  cursor: pointer; color: var(--c-dark);
+  padding: 8px 12px;
+}
+.authBtn:hover { color: var(--c-primary); }
+
+@media (max-width: 1024px) { .nav { display: none; } }
