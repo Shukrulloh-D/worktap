@@ -1,0 +1,9 @@
+.pageFadeIn { animation: fadeIn 0.35s ease; }
+
+.hoverLift { transition: transform 0.25s, box-shadow 0.25s; }
+.hoverLift:hover { transform: translateY(-4px); box-shadow: 0 15px 40px rgba(31,31,31,0.08); }
+
+.hoverScale { transition: transform 0.2s; }
+.hoverScale:hover { transform: scale(1.03); }
+
+button:active, .btn:active { transform: scale(0.98); }
